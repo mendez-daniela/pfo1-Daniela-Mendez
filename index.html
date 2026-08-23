@@ -1,192 +1,426 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metaetiquetas esenciales -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio personal de Daniela Méndez - Profesora en Educación Especial y desarrolladora en formación">
-    
-    <!-- Título de la página -->
-    <title>Daniela Méndez - Portafolio</title>
-    
+    <title>Daniela Méndez | Landing Page</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Enlace a tu archivo CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ============================================ -->
-    <!-- HEADER: Logo y NAVBAR (navegación)           -->
-    <!-- ============================================ -->
-    <header>
-        <p class="logo">Daniela Méndez</p>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#series">Series</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="#inicio" class="nav-logo">
+                <span class="logo-symbol">&lt;/&gt;</span> Daniela<span class="highlight">.dev</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-item">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-item">Sobre Mí</a></li>
+                <li><a href="#experiencia" class="nav-item">Experiencia</a></li>
+                <li><a href="#habilidades" class="nav-item">Habilidades</a></li>
+                <li><a href="#intereses" class="nav-item">Intereses</a></li>
+                <li><a href="#contacto" class="nav-btn">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ============================================ -->
-    <!-- MAIN: Contenido principal                     -->
-    <!-- ============================================ -->
     <main>
-        
-        <!-- ========================================== -->
-        <!-- SECCIÓN 1: INICIO / PRESENTACIÓN           -->
-        <!-- ========================================== -->
-        <section id="inicio">
-            <div class="contenido-inicio">
-                <h1>Hola, soy Daniela Méndez</h1>
-                <p>
-                    👩‍🏫 Profesora en Educación Especial, actualmente a cargo de un grupo en una escuela especial orientada a estudiantes con discapacidad intelectual y TEA, diseñando configuraciones de apoyo para favorecer su aprendizaje y desarrollo.
-                    <br><br>
-                    🎨 Tallerista de AVD (Actividades de la Vida Diaria) y Expresión Literaria para alumnos de Educación Especial.
-                    <br><br>
-                    💜 Vicepresidenta de ACAAVS, donde co-lidero proyectos de acompañamiento y recuperación para víctimas de sectas.
-                    <br><br>
-                    💻 Actualmente, curso la Tecnicatura en Desarrollo de Software en el IFTS 29, combinando mi vocación docente con el mundo de la tecnología para crear soluciones digitales con impacto social.
-                </p>
-                <!-- Enlace visible a GitHub -->
-                <a href="https://github.com/tu-usuario" target="_blank" class="btn-github">
-                    ⭐ Ver mi GitHub
-                </a>
-            </div>
-            <div class="imagen-perfil">
-                <!-- OPCIÓN 1: Con tu foto (crea carpeta img y pon tu foto) -->
-                <img src="img/foto-perfil.jpg" alt="Foto de perfil de Daniela Méndez">
-                
-                <!-- OPCIÓN 2: Con avatar automático (descomenta esta y comenta la de arriba) -->
-                <!-- <img src="https://ui-avatars.com/api/?name=Daniela+Mendez&size=300&background=D81B60&color=fff" alt="Avatar de Daniela Méndez"> -->
+
+        <!-- ================= HERO ================= -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="pill-badge">
+                        <span class="status-indicator"></span> Disponible para nuevos proyectos
+                    </div>
+                    <h1 class="hero-title">
+                        Construyendo <span class="gradient-text">soluciones modernas.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hola, soy <strong>Daniela Méndez</strong>, estudiante de Desarrollo de Software en el Instituto Superior de Formación Técnica N° 29, docente de Educación Especial, Tallerista de AVD y Expresión Literaria, Vicepresidente de ACAAVS (Asociación Civil de Ayuda a Víctimas de Sectas). Explorando el mundo IT.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#intereses" class="btn btn-primary">Intereses</a>
+                        <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <div class="photo-card">
+                        <!-- FOTO DE PERFIL INICIAL -->
+                        <img src="./img/foto-perfil.jpg" 
+                             alt="Foto de perfil Daniela Méndez" 
+                             class="hero-img">
+                        <div class="floating-tech-card">
+                            <span class="code-tag">&lt;Backend en Formación /&gt;</span>
+                            <p class="tech-card-sub">Actualmente aprendiendo Java y Spring Boot, con foco en APIs, bases de datos y lógica de negocio. Apuntando a soluciones robustas y escalables del lado del servidor.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 2: HABILIDADES (Grid)              -->
-        <!-- ========================================== -->
-        <section id="habilidades">
-            <h2>Mis Habilidades</h2>
-            <div class="contenedor-habilidades">
-                
-                <article class="habilidad">
-                    <h3>📚 Educación Especial</h3>
-                    <p>Docente a cargo de grupo en escuela especial, diseñando configuraciones de apoyo para estudiantes con discapacidad intelectual y TEA.</p>
-                </article>
-                
-                <article class="habilidad">
-                    <h3>🎨 Talleres</h3>
-                    <p>Facilitadora de talleres de AVD (Actividades de la Vida Diaria) y Expresión Literaria para alumnos de Educación Especial.</p>
-                </article>
-                
-                <article class="habilidad">
-                    <h3>💜 Gestión Social</h3>
-                    <p>Vicepresidenta de ACAAVS, co-liderando proyectos de acompañamiento y recuperación para víctimas de sectas.</p>
-                </article>
-                
-                <article class="habilidad">
-                    <h3>💻 Desarrollo Web</h3>
-                    <p>HTML, CSS y JavaScript. Creando soluciones digitales accesibles y funcionales.</p>
-                </article>
-                
-                <article class="habilidad">
-                    <h3>🌟 Trabajo en equipo</h3>
-                    <p>Colaboración efectiva en entornos educativos, sociales y tecnológicos.</p>
-                </article>
-                
-                <article class="habilidad">
-                    <h3>🎨 Creatividad</h3>
-                    <p>Capacidad de innovar y encontrar soluciones originales en cada proyecto.</p>
-                </article>
-                
+        <!-- ================= SOBRE MÍ ================= -->
+        <section id="sobre-mi" class="section">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="sub-title">Perfil</span>
+                    <h2 class="main-title">Sobre Mí</h2>
+                </div>
+
+                <div class="about-layout">
+                    <div class="about-bio">
+                        <p>
+                            Mi pasión es transformar problemas complejos en aplicaciones web simples, elegantes y fáciles de usar. Me concentro en escribir código semántico, accesible y estructurado bajo las mejores prácticas del ecosistema web.
+                        </p>
+                        <p>
+                            Actualmente curso la carrera de Desarrollo de Software en el <strong>IFTS N° 29</strong>, combinando formación académica teórica con proyectos prácticos continuos.
+                        </p>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">IFTS 29</span>
+                            <span class="stat-label">Estudiante-Desarrollo de Software</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">CABA</span>
+                            <span class="stat-label">Argentina</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">Backend en Formación</span>
+                            <span class="stat-label">Java • Spring Boot</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">Frontend en Formación</span>
+                            <span class="stat-label">REACT • HTML• CSS • JS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 3: SERIES FAVORITAS CON IMÁGENES  -->
-        <!-- ========================================== -->
-        <section id="series">
-            <h2>📺 Mis Series Favoritas</h2>
-            <p class="subtitulo-series">Historias que me atrapan, personajes que me inspiran</p>
-            <div class="contenedor-series">
-                
-                <article class="serie">
-                    <div class="numero-serie">01</div>
-                    <img src="img/mindhunter-poster.jpg" alt="Póster de la serie Mindhunter" class="imagen-serie">
-                    <h3>Mindhunter</h3>
-                    <p>Dos agentes del FBI entrevistan a asesinos en serie para entender su psicología y resolver casos abiertos. Una serie que explora la mente criminal con una profundidad fascinante.</p>
-                    <div class="etiquetas">
-                        <span class="etiqueta">🕵️ Crimen</span>
-                        <span class="etiqueta">🧠 Psicología</span>
-                        <span class="etiqueta">📺 Netflix</span>
+        <!-- ================= EXPERIENCIA & FORMACIÓN ================= -->
+        <section id="experiencia" class="section bg-alt">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="sub-title">Trayectoria</span>
+                    <h2 class="main-title">Experiencia & Formación</h2>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-badge current">2024 - Presente</span>
+                            <h3 class="timeline-title">Tecnicatura Superior en Desarrollo de Software</h3>
+                            <span class="timeline-org">IFTS N° 29 (en curso)</span>
+                        </div>
+                        <p class="timeline-body">
+                            Formación integral en análisis de sistemas, maquetación frontend, arquitectura de software, bases de datos y metodologías ágiles de trabajo.
+                        </p>
                     </div>
-                </article>
-                
-                <article class="serie">
-                    <div class="numero-serie">02</div>
-                    <img src="img/the-pitt-poster.jpg" alt="Póster de la serie The Pitt" class="imagen-serie">
-                    <h3>The Pitt</h3>
-                    <p>Una serie que retrata el día a día en una sala de emergencias, mostrando la tensión, el drama y la humanidad de quienes trabajan en el ámbito de la salud.</p>
-                    <div class="etiquetas">
-                        <span class="etiqueta">🏥 Drama médico</span>
-                        <span class="etiqueta">💉 Emergencias</span>
-                        <span class="etiqueta">📺 HBO Max</span>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <span class="timeline-badge">2023</span>
+                            <h3 class="timeline-title">Profesora en Educación Especial</h3>
+                            <span class="timeline-org">ISFD N° 1</span>
+                        </div>
+                        <p class="timeline-body">
+                            Docente de Educación Especial especializado en Sordos e Hipoacúsicos.
+                        </p>
                     </div>
-                </article>
-                
-                <article class="serie">
-                    <div class="numero-serie">03</div>
-                    <img src="img/true-detective-poster.jpg" alt="Póster de la serie True Detective" class="imagen-serie">
-                    <h3>True Detective</h3>
-                    <p>Una antología de crímenes donde cada temporada aborda un caso diferente con personajes complejos y atmósferas opresivas. Una obra maestra del thriller psicológico.</p>
-                    <div class="etiquetas">
-                        <span class="etiqueta">🔍 Thriller</span>
-                        <span class="etiqueta">🌑 Noir</span>
-                        <span class="etiqueta">📺 HBO</span>
-                    </div>
-                </article>
-                
+                </div>
             </div>
         </section>
 
-        <!-- ========================================== -->
-        <!-- SECCIÓN 4: CONTACTO (Formulario)           -->
-        <!-- ========================================== -->
-        <section id="contacto">
-            <h2>📩 Contacto</h2>
-            <form action="#" method="post">
-                
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                
-                <button type="submit">Enviar mensaje 💜</button>
-                
-            </form>
+        <!-- ================= HABILIDADES ================= -->
+        <section id="habilidades" class="section">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="sub-title">Stack Tecnológico</span>
+                    <h2 class="main-title">Habilidades & Tecnologías</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="card-icon-box frontend-color">01</div>
+                        <h3>Maquetación Web</h3>
+                        <p>Estructuración de contenido con HTML semántico y estilización con CSS.</p>
+                        <ul class="badge-list">
+                            <li>HTML5 Semántico</li>
+                            <li>CSS3</li>
+                            <li>Flexbox</li>
+                            <li>CSS grid</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="card-icon-box tools-color">02</div>
+                        <h3>Diseño responsive</h3>
+                        <p>Adaptación de interfaces a diferentes dispositivos usando unidades relativas y media queries.</p>
+                        <ul class="badge-list">
+                            <li>Media queries</li>
+                            <li>Mobile First</li>
+                            <li>Unidades relativas</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="card-icon-box best-practices-color">03</div>
+                        <h3>Interactividad y Estilo</h3>
+                        <p>Transiciones, animaciones y efectos visuales para mejorar la experiencia de usuario.</p>
+                        <ul class="badge-list">
+                            <li>Transiciones</li>
+                            <li>Animaciones CSS</li>
+                            <li>Google Fonts</li>
+                            <li>Variables CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-        
+
+        <!-- ================= INTERESES ================= -->
+        <section id="intereses" class="section bg-alt">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="sub-title">Más allá del código</span>
+                    <h2 class="main-title">Intereses & Inspiración</h2>
+                </div>
+
+                <!-- Subsección: Series -->
+                <div class="interests-subsection">
+                    <h3 class="interests-subheading">Series Favoritas</h3>
+                    <div class="projects-grid">
+                        <!-- Serie 1 -->
+                        <article class="project-card">
+                            <div class="project-image-container">
+                                <img src="./img/serie-mindhunter.png" 
+                                     alt="Póster de la serie Mindhunter" 
+                                     class="project-image">
+                                <span class="project-category">Basada en hechos reales</span>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-heading">Mindhunter</h3>
+                                <p class="project-summary">
+                                    Un thriller psicológico que, en lugar de centrarse en la acción, se sumerge en las mentes de los asesinos más perturbadores para intentar entenderlos.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Crimen</span>
+                                    <span class="tag">Thriller psicológico</span>
+                                    <span class="tag">Psicología criminal</span>
+                                    <span class="tag">Netflix</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Serie 2 -->
+                        <article class="project-card">
+                            <div class="project-image-container">
+                                <img src="./img/true-detective-1a-temporada.jpg" 
+                                     alt="Póster de la primera temporada de True Detective" 
+                                     class="project-image">
+                                <span class="project-category">Antología criminal</span>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-heading">True Detective</h3>
+                                <p class="project-summary">
+                                    True Detective no es solo una serie de crimen, es noir puro: personajes atormentados, atmósfera opresiva y preguntas existenciales que quedan flotando en el aire como la neblina de Luisiana. 
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Misterio</span>
+                                    <span class="tag">Noir</span>
+                                    <span class="tag">Antología</span>
+                                    <span class="tag">HBO</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Serie 3 -->
+                        <article class="project-card">
+                            <div class="project-image-container">
+                                <img src="./img/the-pitt-1a-temporada.jpg" 
+                                     alt="Póster de la primera temporada de The Pitt" 
+                                     class="project-image">
+                                <span class="project-category">Drama médico</span>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-heading">The Pitt</h3>
+                                <p class="project-summary">
+                                    Drama médico que retrata el día a día en una sala de emergencias con una tensión constante y una mirada cruda a la realidad de los profesionales de la salud.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Sala de Emergencias</span>
+                                    <span class="tag">Trauma</span>
+                                    <span class="tag">Contrarreloj</span>
+                                    <span class="tag">HBO</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Subsección: Música -->
+                <div class="interests-subsection music-subsection">
+                    <h3 class="interests-subheading">Playlist Personal</h3>
+                    <div class="interests-grid">
+                        <!-- Música 1 -->
+                        <div class="interest-card">
+                            <div class="interest-img-box">
+                                <img src="./img/linkin-park.jpg" 
+                                     alt="Póster de la banda Linkin Park" 
+                                     class="interest-img">
+                                <span class="interest-badge">Nu metal / Rock alternativo</span>
+                            </div>
+                            <div class="interest-content">
+                                <h3 class="interest-name">Linkin Park</h3>
+                                <p class="interest-desc">
+                                    Rock alternativo con letras profundas que mezclan intensidad emocional y electrónica.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Música 2 -->
+                        <div class="interest-card">
+                            <div class="interest-img-box">
+                                <img src="./img/metallica.png" 
+                                     alt="Foto de la banda Metallica" 
+                                     class="interest-img">
+                                <span class="interest-badge">Thrash metal</span>
+                            </div>
+                            <div class="interest-content">
+                                <h3 class="interest-name">Metallica</h3>
+                                <p class="interest-desc">
+                                    Una de las bandas más influyentes del metal, conocida por su potencia, técnica y canciones que se convirtieron en himnos generacionales.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Música 3 -->
+                        <div class="interest-card">
+                            <div class="interest-img-box">
+                                <img src="./img/dash-berlin.jpg" 
+                                     alt="Foto del DJ Dash Berlin" 
+                                     class="interest-img">
+                                <span class="interest-badge">Trance</span>
+                            </div>
+                            <div class="interest-content">
+                                <h3 class="interest-name">Dash Berlin</h3>
+                                <p class="interest-desc">
+                                    Trance melódico que combina energía y emoción en cada beat. Ideal para conectar con la música electrónica más allá del baile.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Música 4 -->
+                        <div class="interest-card">
+                            <div class="interest-img-box">
+                                <img src="./img/lana-del-rey.jpg" 
+                                     alt="Póster de la cantante Lana del Rey" 
+                                     class="interest-img">
+                                <span class="interest-badge">Indie pop</span>
+                            </div>
+                            <div class="interest-content">
+                                <h3 class="interest-name">Lana Del Rey</h3>
+                                <p class="interest-desc">
+                                    Indie pop con estética cinematográfica y nostalgia infinita.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+        <section id="contacto" class="section bg-alt">
+            <div class="section-container">
+                <div class="section-head">
+                    <span class="sub-title">Contacto</span>
+                    <h2 class="main-title">Envíame un Mensaje</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Panel Informativo -->
+                    <div class="contact-info-panel">
+                        <h3 class="contact-panel-title">¿Tenés un proyecto o consulta?</h3>
+                        <p class="contact-panel-desc">
+                            Podés completar el formulario de contacto o comunicarte directamente a través de mis canales y redes.
+                        </p>
+
+                        <div class="contact-direct-items">
+                            <div class="direct-item">
+                                <span class="direct-tag">&lt;email/&gt;</span>
+                                <div>
+                                    <span class="direct-label">Correo Electrónico</span>
+                                    <a href="mailto:tuemail@ejemplo.com" class="direct-value">mendezdaniela.e@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="direct-item">
+                                <span class="direct-tag">&lt;linkedin/&gt;</span>
+                                <div>
+                                    <span class="direct-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/mendez-daniela/" target="_blank" rel="noopener" class="direct-value">linkedin.com/in/mendez-daniela/</a>
+                                </div>
+                            </div>
+                            <div class="direct-item">
+                                <span class="direct-tag">&lt;github/&gt;</span>
+                                <div>
+                                    <span class="direct-label">GitHub</span>
+                                    <a href="https://github.com/mendez-daniela" target="_blank" rel="noopener" class="direct-value">github.com/mendez-daniela</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario Estático -->
+                    <div class="contact-form-card">
+                        <form class="contact-form" action="#" method="POST" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ingresá tu nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="tuemail@ejemplo.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" class="form-input" placeholder="Motivo de tu mensaje" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" class="form-textarea" placeholder="Escribí tu mensaje acá..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- ============================================ -->
-    <!-- FOOTER: Información de cierre                -->
-    <!-- ============================================ -->
-    <footer>
-        <p>© 2026 Daniela Méndez · Profesora en Educación Especial · Desarrolladora en formación</p>
-        <p>
-            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a> · 
-            <a href="https://linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
-        </p>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2026 Daniela Méndez • Estudiante de Desarrollo de Software (IFTS N° 29)</p>
+            <div class="footer-links">
+                <a href="#inicio">Volver arriba &uarr;</a>
+            </div>
+        </div>
     </footer>
 
 </body>
