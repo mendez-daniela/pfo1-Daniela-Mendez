@@ -1,7 +1,7 @@
 # PFO1 - Landing de Portafolio Personal
 
 ## 📝 Descripción
-Landing page personal desarrollada con **HTML5 y CSS3** como parte de la PFO1 de la carrera de Desarrollo de Sistemas (ISFT N° 29). El objetivo es presentar mi perfil, formación académica, habilidades técnicas, intereses y vías de contacto con un diseño moderno de estética developer.
+Landing page personal desarrollada con **HTML5 y CSS3** como parte de la PFO1 de la carrera de Desarrollo de Sistemas (IFTS N° 29). El objetivo es presentar mi perfil, formación académica, habilidades técnicas, intereses y vías de contacto con un diseño moderno de estética developer.
 
 ## 🌐 URL de Vercel
 [https://pfo1-daniela-mendez.vercel.app/](https://pfo1-daniela-mendez.vercel.app/)
